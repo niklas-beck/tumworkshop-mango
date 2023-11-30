@@ -27,6 +27,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
 
 
 # Add a new function here
+@app.route(route="sum")
 def sum(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python sum function processed a request.')
 
